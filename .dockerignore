@@ -1,0 +1,8 @@
+.git
+.idea
+target
+.env
+src/test
+.gradle
+build
+.kotlin

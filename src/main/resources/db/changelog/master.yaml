@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-protocol-tables
+      author: thor
+      changes:
+        - sqlFile:
+            path: changeset/001-create-protocol-tables.sql
+            relativeToChangelogFile: true
+      rollback:
+        - sqlFile:
+            path: changeset/001-drop-protocol-tables.sql
+            relativeToChangelogFile: true
